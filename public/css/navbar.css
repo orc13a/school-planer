@@ -37,3 +37,21 @@
 .col-3Nav {
     text-align: right;
 }
+
+.username-display {
+    display: inline-block;
+}
+
+.logout-btn {
+    display: inline-block;
+    padding: 5px;
+    width: 100px;
+    background-color: rgba(132, 0, 255, 0.342);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
