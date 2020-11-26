@@ -49,7 +49,7 @@ td, th {
 
 .dayTextarea {
     width: 100%;
-    height: 300px;
+    min-height: 75px;
     margin: none;
     border: none;
     outline: none;
