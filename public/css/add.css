@@ -19,11 +19,38 @@ td, th {
     padding: 12px 10px;
 }
 
+.weekHeader {
+    text-align: center;
+    background-color: rgba(0, 197, 59, 0.575);
+}
+
+.weekInput {
+    width: 70px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
 .dayHeader {
     text-align: center;
     background-color: rgba(0, 140, 255, 0.575);
 }
 
+.task-title {
+    width: 150px;
+}
+
 .thInput {
     width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+}
+
+.dayTextarea {
+    width: 100%;
+    min-height: 50px;
+    margin: none;
+    border: none;
+    outline: none;
 }
