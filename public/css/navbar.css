@@ -1,0 +1,69 @@
+.navbarContainer {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    padding: 18px 15px;
+}
+
+.navbar {
+    display: inline-block;
+    width: 87%;
+}
+
+.navbar > ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar > ul >  li {
+    display: inline-block;
+    list-style-type: none;
+    list-style: none;
+    margin: 0px 10px;
+    width: 100px;
+    text-align: center;
+    padding: 7px 0px;
+}
+
+.navbar > ul > li:hover {
+    /* background-color: rgba(27, 31, 35, 0.05); */
+    border-bottom: 2px solid black;
+    /* border-radius: 10px; */
+    cursor: pointer;
+}
+
+.navbar > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbarActive {
+    border-bottom: 2px solid black;
+}
+
+.loginContainer {
+    display: inline-block;
+    width: 12%;
+}
+
+.loginContainer > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+
+.loginContainer > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.loginContainer > ul > li > a > div {
+    margin: 0px 10px;
+    width: 100px;
+    text-align: center;
+    padding: 7px 0px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.loginContainer > ul > li > a > div:hover {
+    box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.10);
+}
