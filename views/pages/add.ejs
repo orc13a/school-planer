@@ -37,7 +37,7 @@
                     </li>
                 </ul>
             </div>
-            <table class="addTable">
+            <table class="addTable" id="x">
                 <tbody>
                     <tr>
                         <td class="weekHeader" colspan="100%">
@@ -98,12 +98,16 @@
                     </tr>
                 </tbody>
             </table>
-        </form>
-        <div>
             <div>
-                <button>Tilføj række</button>
+                <div>
+                    <button onclick="addRow();" type="button">Tilføj række</button>
+                </div>
+                <div>
+                    <button type="submit">GEM</button>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </body>
+<script src="./js/addRows.js"></script>
 </html> 
