@@ -1,5 +1,7 @@
-function addRow() {
-    var table = document.getElementById('x');
+let rowCounter = 2;
+
+function addDayRow(selectedTable, rowCounterOut) {
+    var table = document.getElementById(selectedTable);
     
     var tr = document.createElement('tr');
     table.appendChild(tr);
@@ -10,6 +12,7 @@ function addRow() {
 
     var tdHeadersInput = document.createElement('input');
     tdHeadersInput.setAttribute('type', 'text');
+    tdHeadersInput.setAttribute('name', 'dayHeaderInput_' + rowCounter);
     tdHeadersInput.setAttribute('class', 'thInput');
     tdHeadersInput.setAttribute('placeholder', 'Skriv her');
     tdHeader.appendChild(tdHeadersInput);
@@ -19,6 +22,7 @@ function addRow() {
 
     var taMon = document.createElement('textarea');
     taMon.setAttribute('class', 'dayTextarea');
+    taMon.setAttribute('name', 'dayMonText_' + rowCounter);
     taMon.setAttribute('placeholder', 'Hvad skal der laves?');
     tdMon.appendChild(taMon);
 
@@ -27,6 +31,7 @@ function addRow() {
 
     var taTue = document.createElement('textarea');
     taTue.setAttribute('class', 'dayTextarea');
+    taTue.setAttribute('name', 'dayTueText_' + rowCounter);
     taTue.setAttribute('placeholder', 'Hvad skal der laves?');
     tdTue.appendChild(taTue);
 
@@ -35,6 +40,7 @@ function addRow() {
 
     var taWen = document.createElement('textarea');
     taWen.setAttribute('class', 'dayTextarea');
+    taWen.setAttribute('name', 'dayWenText_' + rowCounter);
     taWen.setAttribute('placeholder', 'Hvad skal der laves?');
     tdWen.appendChild(taWen);
 
@@ -43,6 +49,7 @@ function addRow() {
 
     var taTur = document.createElement('textarea');
     taTur.setAttribute('class', 'dayTextarea');
+    taTur.setAttribute('name', 'dayTurText_' + rowCounter);
     taTur.setAttribute('placeholder', 'Hvad skal der laves?');
     tdTur.appendChild(taTur);
 
@@ -51,6 +58,7 @@ function addRow() {
 
     var taFri = document.createElement('textarea');
     taFri.setAttribute('class', 'dayTextarea');
+    taFri.setAttribute('name', 'dayFriText_' + rowCounter);
     taFri.setAttribute('placeholder', 'Hvad skal der laves?');
     tdFri.appendChild(taFri);
 
@@ -59,6 +67,7 @@ function addRow() {
 
     var taSat = document.createElement('textarea');
     taSat.setAttribute('class', 'dayTextarea');
+    taSat.setAttribute('name', 'daySatText_' + rowCounter);
     taSat.setAttribute('placeholder', 'Hvad skal der laves?');
     tdSat.appendChild(taSat);
 
@@ -67,6 +76,11 @@ function addRow() {
 
     var taSun = document.createElement('textarea');
     taSun.setAttribute('class', 'dayTextarea');
+    taSun.setAttribute('name', 'daySunText_' + rowCounter);
     taSun.setAttribute('placeholder', 'Hvad skal der laves?');
     tdSun.appendChild(taSun);
+
+    var counterOut = document.getElementById(rowCounterOut);
+    counterOut.value = rowCounter;
+    rowCounter++;
 }

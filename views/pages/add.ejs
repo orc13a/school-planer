@@ -11,7 +11,7 @@
     <%- include('../templates/navbar') %>
 
     <div class="container-fluid">
-        <form action="" method="post">
+        <form action="/addSkemas" method="post">
             <div>
                 <h4>Skal udfyldes:</h4>
                 <ul>
@@ -37,11 +37,11 @@
                     </li>
                 </ul>
             </div>
-            <table class="addTable" id="x">
-                <tbody>
+            <table class="addTable">
+                <tbody id="dayPlan">
                     <tr>
                         <td class="weekHeader" colspan="100%">
-                            Uge <input type="text" placeholder="Uge nr." class="weekInput" maxlength="2">
+                            Uge <input name="weeknumber" type="text" placeholder="Uge nr." class="weekInput" maxlength="2">
                         </td>
                     </tr>
                     <tr>
@@ -72,42 +72,43 @@
                     </tr>
                     <tr>
                         <td class="task-title">
-                            <input type="text" class="thInput" placeholder="Skriv her">
+                            <input name="dayHeaderInput_1" type="text" class="thInput" placeholder="Skriv her">
                         </td>
                         <td>
-                            <textarea name="" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
+                            <textarea name="dayMonText_1" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
                         </td>
                         <td>
-                            <textarea name="" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
+                            <textarea name="dayTueText_1" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
                         </td>
                         <td>
-                            <textarea name="" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
+                            <textarea name="dayWenText_1" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
                         </td>
                         <td>
-                            <textarea name="" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
+                            <textarea name="dayTurText_1" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
                         </td>
                         <td>
-                            <textarea name="" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
+                            <textarea name="dayFriText_1" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
                         </td>
                         <td>
-                            <textarea name="" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
+                            <textarea name="daySatText_1" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
                         </td>
                         <td>
-                            <textarea name="" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
+                            <textarea name="daySunText_1" id="" class="dayTextarea" placeholder="Hvad skal der laves?"></textarea>
                         </td>
                     </tr>
                 </tbody>
             </table>
             <div>
                 <div>
-                    <button onclick="addRow();" type="button">Tilføj række</button>
+                    <button onclick="addDayRow('dayPlan', 'dayRowCounter');" type="button">Tilføj række</button>
                 </div>
                 <div>
+                    <input type="text" name="dayRowCounter" id="dayRowCounter" value="1">
                     <button type="submit">GEM</button>
                 </div>
             </div>
         </form>
     </div>
 </body>
-<script src="./js/addRows.js"></script>
+<script src="./js/addDayRows.js"></script>
 </html> 

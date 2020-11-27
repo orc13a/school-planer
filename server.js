@@ -30,7 +30,7 @@ server.get('/add', (req, res) => {
 });
 
 server.post('/addSkemas', (req, res) => {
-    res.send(req.body.username);
+    res.send(req.body);
 });
 
 server.listen(port, (err) => {
