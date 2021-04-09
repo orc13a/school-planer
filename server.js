@@ -29,6 +29,10 @@ server.get('/add', (req, res) => {
     res.end();
 });
 
+server.get('/edit/:skemaId', (req, res) => {
+    res.end('none yet');
+});
+
 server.post('/addSkemas', (req, res) => {
     res.send(req.body);
 });
